@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,7 +56,9 @@
       <section class="primary-section section">
         <div class="container">
           <h1 class="primary-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open="">
+            Order Service
+          </button>
         </div>
       </section>
       <section class="section second-section">
@@ -431,13 +433,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-window is-hidden" data-modal-open="/modal.js">
+    <div class="modal-window is-hidden" data-modal-open="">
       <div class="modal-window-container">
-        <button
-          type="button"
-          data-modal-close="/modal.js"
-          class="modal-window-button"
-        >
+        <button type="button" class="modal-window-button" data-modal-close="">
           <svg width="8" height="8" class="icon-close">
             <use href="./images/icons.svg#icon-close" class="close-icon"></use>
           </svg>
